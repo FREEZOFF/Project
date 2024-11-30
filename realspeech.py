@@ -59,9 +59,9 @@ def predict_parkinsons(voice_features):
         prediction = model.predict(voice_features_scaled)
 
         if prediction == 1:
-            print("Prediction: You likely do not have Parkinson's disease.")
-        else:
             print("Prediction: You may have Parkinson's disease.")
+        else:
+            print("Prediction: You likely do not have Parkinson's disease.")
     except Exception as e:
         print(f"Error predicting Parkinson's: {e}")
 
